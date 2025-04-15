@@ -1,0 +1,37 @@
+A. Basic Functionalities
+1.1 Define Time Blocks
+Description: Divide the day into 20-minute intervals from 7 AM to 7 PM.
+Input: None (predefined intervals)
+Output: List of time intervals
+Contribution: Forms the basic structure to simulate scheduling and staffing.
+
+1.2 Assign Number of Employees per Time Block
+Description: Allows the user to input how many employees are scheduled per time block (between 2–4).
+Input: Integer values entered by user for each time block
+Output: Time block schedule with employee count
+Contribution: Controls staffing levels, which directly impact wait times and costs.
+
+1.3 Mark Peak vs Non-Peak Time Blocks
+Description: Identifies which blocks are peak hours.
+Input: Predefined list of peak block indices
+Output: Boolean flag for each block
+Contribution: Differentiates customer arrival rates and wait time expectations.
+
+1.4 Simulate Customer Arrivals and Wait Times
+Description: Simulates daily customer flow and estimates wait times using Poisson and Exponential distributions.
+Input: Time block schedule, arrival rate (λ), wait time lookup
+Output: Average wait time per customer
+Contribution: Core functionality to evaluate customer experience under current staffing.
+
+1.5 Calculate Daily Labor Cost
+Description: Computes total employee-hours and multiplies by hourly wage.
+Input: Number of employees per block
+Output: Total daily labor cost ($)
+Contribution: Provides financial insight into the cost of staffing decisions.
+
+1.6 Run Simulation Over Multiple Days
+Description: Repeats daily simulation to get average wait time over several days (default 1000).
+Input: Number of days
+Output: Long-run average wait time
+Contribution: Improves accuracy of results by accounting for randomness over time.
+
